@@ -10,9 +10,9 @@ class BuildCommand(build):
 
 
 setup(
-    name="cb_zoom_info",
+    name="cb_django_slack",
     version="0.1",
-    packages=[],
-    install_requires=[],
+    packages=["slack"],
+    install_requires=["slack-sdk==3.19.5"],
     cmdclass={"build": BuildCommand},
 )
